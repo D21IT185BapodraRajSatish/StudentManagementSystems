@@ -14,7 +14,8 @@ public class ResultController {
     ResultRepository resultRepository;
 
     @GetMapping("/result/{id}")
-    public Result getResultId(@PathVariable Integer id){ return resultRepository.findById(id).get();}
+    public Result getResultId(@PathVariable Integer id){
+        return resultRepository.findById(id).get();}
 
 
 
